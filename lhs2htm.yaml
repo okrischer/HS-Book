@@ -1,0 +1,30 @@
+from: latex+lhs
+to: html
+
+input-files:
+- Prerequisites/Binary.lhs
+- Prerequisites/Logic.lhs
+- Prerequisites/Algebra.lhs
+- Prerequisites/Sorting.lhs
+
+output-file: AlgorithmicThinking.html
+
+standalone: true
+table-of-contents: true
+toc-depth: 2
+number-sections: true
+
+html-math-method:
+    method: mathjax
+    url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+
+css:
+- pandoc.css
+
+include-after-body: [footer.html]
+
+highlight-style: tango
+
+metadata-files:
+- metadata.yaml
+

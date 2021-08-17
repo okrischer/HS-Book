@@ -1,0 +1,33 @@
+from: markdown+lhs
+to: pdf
+
+input-files:
+- Prerequisites/Binary.lhs
+- Prerequisites/Logic.lhs
+- Prerequisites/Sorting.lhs
+- BasicMath/Maths.lhs
+- BasicMath/Multiples.lhs
+- BasicMath/Fibonacci.lhs
+- NumberGames/Nim.lhs
+
+output-file: AlgorithmicThinking.pdf
+
+template: template.tex
+table-of-contents: true
+toc-depth: 3
+number-sections: true
+
+metadata-files:
+- metadata.yaml
+
+variables:
+    documentclass: scrbook
+    classoption:
+        - a4paper
+    mainfont: LiberationSerif
+    sansfont: LiberationSans
+    monofont: LiberationMono
+    
+pdf-engine: xelatex
+
+highlight-style: tango
