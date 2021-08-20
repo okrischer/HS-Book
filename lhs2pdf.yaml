@@ -17,8 +17,9 @@ table-of-contents: true
 toc-depth: 3
 number-sections: true
 
-metadata-files:
-- metadata.yaml
+metadata:
+  author: Oliver Krischer
+  title: 'Algorithmic Thinking with Haskell'
 
 variables:
     documentclass: scrbook
